@@ -6,18 +6,18 @@
         {
             switch (CB2) //ComboBox2
             {
-                case "Век":
+                case "Century":
                     switch (CB3) //ComboBox3
                     {
-                        case "Век":
+                        case "Century":
                             return time; // Value
-                        case "Год":
+                        case "Year":
                             return time * 99.99999999999999;
-                        case "Месяц":
+                        case "Month":
                             return time * 1216.6666666832132;
-                        case "Декада":
+                        case "Decade":
                             return time * 10;
-                        case "Неделя":
+                        case "Week":
                             return time * 5214.285714356629;
                         case "Сутки":
                             return time * 36500.000000496395;
@@ -36,18 +36,18 @@
                     }
                     break;
 
-                case "Год":
+                case "Year":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.01;
-                        case "Год":
+                        case "Year":
                             return time;
-                        case "Месяц":
+                        case "Month":
                             return time * 12.166666666832132;
-                        case "Декада":
+                        case "Decade":
                             return time * 0.1;
-                        case "Неделя":
+                        case "Week":
                             return time * 52.14285714356629;
                         case "Сутки":
                             return time * 365.00000000496397;
@@ -66,18 +66,18 @@
                     }
                     break;
 
-                case "Месяц":
+                case "Month":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.0008219178082080001;
-                        case "Год":
+                        case "Year":
                             return time * 0.0821917808208;
-                        case "Месяц":
+                        case "Month":
                             return time;
-                        case "Декада":
+                        case "Decade":
                             return time * 0.008219178082080001;
-                        case "Неделя":
+                        case "Week":
                             return time * 4.2857142857142865;
                         case "Сутки":
                             return time * 30.000000000000004;
@@ -96,18 +96,18 @@
                     }
                     break;
 
-                case "Декада":
+                case "Decade":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.1;
-                        case "Год":
+                        case "Year":
                             return time * 10;
-                        case "Месяц":
+                        case "Month":
                             return time * 121.66666666832131;
-                        case "Декада":
+                        case "Decade":
                             return time;
-                        case "Неделя":
+                        case "Week":
                             return time * 521.4285714356629;
                         case "Сутки":
                             return time * 3650.0000000496398;
@@ -126,18 +126,18 @@
                     }
                     break;
 
-                case "Неделя":
+                case "Week":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.0001917808219152;
-                        case "Год":
+                        case "Year":
                             return time * 0.019178082191519997;
-                        case "Месяц":
+                        case "Month":
                             return time * 0.23333333333333328;
-                        case "Декада":
+                        case "Decade":
                             return time * 0.001917808219152;
-                        case "Неделя":
+                        case "Week":
                             return time;
                         case "Сутки":
                             return time * 6.999999999999999;
@@ -159,15 +159,15 @@
                 case "Сутки":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.000027397260273600004;
-                        case "Год":
+                        case "Year":
                             return time * 0.00273972602736;
-                        case "Месяц":
+                        case "Month":
                             return time * 0.03333333333333333;
-                        case "Декада":
+                        case "Decade":
                             return time * 0.00027397260273600004;
-                        case "Неделя":
+                        case "Week":
                             return time * 0.14285714285714;
                         case "Сутки":
                             return time;
@@ -189,15 +189,15 @@
                 case "Час":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 0.0000011415525114;
-                        case "Год":
+                        case "Year":
                             return time * 0.00011415525114;
-                        case "Месяц":
+                        case "Month":
                             return time * 0.0013888888888888887;
-                        case "Декада":
+                        case "Decade":
                             return time * 0.000011415525114;
-                        case "Неделя":
+                        case "Week":
                             return time * 0.005952380952380953;
                         case "Сутки":
                             return time * 0.041666666666666664;
@@ -219,15 +219,15 @@
                 case "Минута":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 1.9025875190000003e-8;
-                        case "Год":
+                        case "Year":
                             return time * 0.000001902587519;
-                        case "Месяц":
+                        case "Month":
                             return time * 0.000023148148148148147;
-                        case "Декада":
+                        case "Decade":
                             return time * 1.9025875190000002e-7;
-                        case "Неделя":
+                        case "Week":
                             return time * 0.00009920634920634922;
                         case "Сутки":
                             return time * 0.0006944444444444444;
@@ -249,15 +249,15 @@
                 case "Секунда":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 3.1709791983333335e-10;
-                        case "Год":
+                        case "Year":
                             return time * 3.1709791983333334e-8;
-                        case "Месяц":
+                        case "Month":
                             return time * 3.8580246913580245e-7;
-                        case "Декада":
+                        case "Decade":
                             return time * 3.1709791983333335e-9;
-                        case "Неделя":
+                        case "Week":
                             return time * 0.0000016534391534391535;
                         case "Сутки":
                             return time * 0.000011574074074074073;
@@ -279,15 +279,15 @@
                 case "Миллисекунда":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 3.1709791983333336e-13;
-                        case "Год":
+                        case "Year":
                             return time * 3.1709791983333334e-11;
-                        case "Месяц":
+                        case "Month":
                             return time * 3.8580246913580243e-10;
-                        case "Декада":
+                        case "Decade":
                             return time * 3.1709791983333335e-12;
-                        case "Неделя":
+                        case "Week":
                             return time * 1.6534391534391535e-9;
                         case "Сутки":
                             return time * 1.1574074074074074e-8;
@@ -309,15 +309,15 @@
                 case "Микросекунда":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 3.1709791983333336e-16;
-                        case "Год":
+                        case "Year":
                             return time * 3.1709791983333336e-14;
-                        case "Месяц":
+                        case "Month":
                             return time * 3.858024691358024e-13;
-                        case "Декада":
+                        case "Decade":
                             return time * 3.1709791983333336e-15;
-                        case "Неделя":
+                        case "Week":
                             return time * 1.6534391534391536e-12;
                         case "Сутки":
                             return time * 1.1574074074074074e-11;
@@ -339,15 +339,15 @@
                 case "Наносекунда":
                     switch (CB3)
                     {
-                        case "Век":
+                        case "Century":
                             return time * 3.170979198333334e-19;
-                        case "Год":
+                        case "Year":
                             return time * 3.1709791983333333e-17;
-                        case "Месяц":
+                        case "Month":
                             return time * 3.858024691358024e-16;
-                        case "Декада":
+                        case "Decade":
                             return time * 3.1709791983333336e-18;
-                        case "Неделя":
+                        case "Week":
                             return time * 1.6534391534391536e-15;
                         case "Сутки":
                             return time * 1.1574074074074074e-14;

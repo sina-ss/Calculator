@@ -44,3 +44,15 @@ E:\Files\Folder\C#\Проекты\Calculator\Calculator\obj\Debug\Calculator.csp
 E:\Files\Folder\C#\Проекты\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 E:\Files\Folder\C#\Проекты\Calculator\Calculator\obj\Debug\Calculator.exe
 E:\Files\Folder\C#\Проекты\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\Job\tax-calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\Job\tax-calculator\Calculator\bin\Debug\Calculator.exe
+D:\Job\tax-calculator\Calculator\bin\Debug\Calculator.pdb
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.Form1_Main.resources
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.Form2_Settings.resources
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.exe
+D:\Job\tax-calculator\Calculator\obj\Debug\Calculator.pdb

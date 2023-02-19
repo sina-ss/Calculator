@@ -17,7 +17,7 @@ namespace Calculator
             LabelNumber.Text = null;
             LabelDecision.Text = null;
             richTextBox.Text = Settings.Default.History;
-            ComboBox1.SelectedItem = "Информация";
+            ComboBox1.SelectedItem = "Information";
             AddHandlersToControls();
         }
 
@@ -139,7 +139,7 @@ namespace Calculator
                 }
                 catch
                 {
-                    LabelDecision.Text = "Ошибка!";
+                    LabelDecision.Text = "Error!";
                 }
             }
             else // Вычисление всего остального
@@ -152,13 +152,13 @@ namespace Calculator
                 }
                 catch
                 {
-                    LabelDecision.Text = "Ошибка!";
+                    LabelDecision.Text = "Error!";
                 }
             }
             
             try
             {
-                if (Settings.Default.CB1F2 == true && Eq != "Ошибка!") // Сортировка чисел по разрядам (решения)
+                if (Settings.Default.CB1F2 == true && Eq != "Error!") // Сортировка чисел по разрядам (решения)
                 {
                     bool bDrobSort = false;
                     string sDrobSort = null;
@@ -199,7 +199,7 @@ namespace Calculator
                             SortNumber(9, false);
                             break;
                         default:
-                            if (!Eq.Contains("Неверное"))
+                            if (!Eq.Contains("Wrong"))
                                 Eq = Eq.Replace(" ", null);
                             break;
                     }
@@ -207,14 +207,14 @@ namespace Calculator
                         Eq += sDrobSort;
                 }
 
-                if (Settings.Default.CB4F2 == true && Eq != "Ошибка!" && Eq.Contains("."))
+                if (Settings.Default.CB4F2 == true && Eq != "Error!" && Eq.Contains("."))
                 {
                     Eq = Eq.Remove(Eq.IndexOf(".") + 3);
                 }
             }
             catch { }
 
-            if (LabelDecision.Text != "Ошибка!")
+            if (LabelDecision.Text != "Error!")
                 LabelDecision.Text = Eq;
             Settings.Default.History = richTextBox.Text;
 
@@ -277,8 +277,8 @@ namespace Calculator
         private void ToolHelpHotKey_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-" Backspace - Чистит один символ \n Insert - Чистит основное поле \n Delete - Чистит все поля",
-"Горячие клавиши",
+" Backspace - Clear one character \n Insert - Clear Main Field \n Delete - Clear Field",
+"Hotkeys",
 MessageBoxButtons.OK,
 MessageBoxIcon.Information);
         }
@@ -286,13 +286,13 @@ MessageBoxIcon.Information);
         private void ToolHelpPercent_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-"Примеры вычисления процентов: \n\n" +
-"Прибавить 35% к числу 487 ?\n Как вычислять: 487 + 35% \n\n" +
-"Вычесть 17% из числа 229 ?\n Как вычислять: 229 - 17% \n\n" +
-"Какое число соответствует 23% от числа 857 ?\n Как вычислять: 857 * 23% \n\n" +
-"Сколько составляет 24% от числа 248 ?\n Как вычислять: 248 / 24% \n\n" +
-"Сколько процентов составляет число 7 от числа 30 ?\n Как вычислять: 7%30 \n\n",
-"Вычесление процентов",
+"Percentage calculation examples: \n\n" +
+"Add 35% to 487 ?\n How to calculate: 487 + 35% \n\n" +
+"Subtract 17% from 229 ?\n How to calculate: 229 - 17% \n\n" +
+"Which number corresponds to 23% of 857?\n How to calculate: 857 * 23% \n\n" +
+"What is 24% of 248?\n How to calculate: 248 / 24% \n\n" +
+"What percentage is 7 of 30?\n How to calculate: 7%30 \n\n",
+"Percentage Calculation",
 MessageBoxButtons.OK,
 MessageBoxIcon.Information);
         }
@@ -433,34 +433,34 @@ MessageBoxIcon.Information);
             ComboBox3.Items.Clear();
             TextBoxInput.Text = TextBoxOutput.Text = null;
 
-            if (ComboBox1.Text == "Информация")
+            if (ComboBox1.Text == "Information")
             {
-                object[] items = { "Терабайт", "Гигабайт", "Мегабайт", "Килобайт", "Байт", "Бит",
-                "Килобит", "Мегабит", "Гигабит", "Терабит"};
+                object[] items = { "Terabyte", "Gigabyte", "Megabyte", "Kilobyte", "Byte", "bit",
+                "Kilobit", "Megabit", "Gigabit", "Terabit"};
                 ComboBox2.Items.AddRange(items);
                 ComboBox3.Items.AddRange(items);
-                ComboBox2.Text = "Гигабайт";
-                ComboBox3.Text = "Мегабайт";
+                ComboBox2.Text = "Gigabyte";
+                ComboBox3.Text = "Megabyte";
             }
 
-            if (ComboBox1.Text == "Время")
+            if (ComboBox1.Text == "Time")
             {
-                object[] items = { "Век", "Год", "Месяц", "Декада", "Неделя", "Сутки", "Час", "Минута", "Секунда", "Миллисекунда", "Микросекунда", "Наносекунда" };
+                object[] items = { "Century", "Year", "Month", "Decade", "Week", "Day", "Hour", "Minute", "Second", "Millisecond", "Microsecond", "Nanosecond" };
                 ComboBox2.Items.AddRange(items);
                 ComboBox3.Items.AddRange(items);
-                ComboBox2.Text = "Час";
-                ComboBox3.Text = "Минута";
+                ComboBox2.Text = "Hour";
+                ComboBox3.Text = "Minute";
             }
 
-            if (ComboBox1.Text == "Системы счисления")
+            if (ComboBox1.Text == "Number systems")
             {
-                object[] items = { "Двоичная система счисления", "Восьмеричная система счисления", "Шестнадцатеричная система счисления"};
-                object[] item = { "Десятичная система счисления" };
+                object[] items = { "Binary number system", "Octal number system", "Hexadecimal number system"};
+                object[] item = { "Decimal number system" };
                 ComboBox2.Enabled = false;
                 ComboBox2.Items.AddRange(item);
                 ComboBox3.Items.AddRange(items);
-                ComboBox2.Text = "Десятичная система счисления";
-                ComboBox3.Text = "Двоичная система счисления";
+                ComboBox2.Text = "Decimal number system";
+                ComboBox3.Text = "Binary number system";
             }
         }
 
@@ -494,16 +494,16 @@ MessageBoxIcon.Information);
 
         private void SelectConvert(object sender, EventArgs e)
         {
-            if (ComboBox1.Text == "Информация")
+            if (ComboBox1.Text == "Information")
                 ConvertInformation();
 
-            if (ComboBox1.Text == "Время")
+            if (ComboBox1.Text == "Time")
                 ConvertTime();
 
-            if (ComboBox1.Text == "Системы счисления")
+            if (ComboBox1.Text == "Number systems")
                 ConvertNumberSystem();
 
-            if ((TextBoxOutput.Text == "бесконечность") || (TextBoxOutput.Text == "∞"))
+            if ((TextBoxOutput.Text == "infinity") || (TextBoxOutput.Text == "∞"))
                 TextBoxInput.Text = null;
         }
 
@@ -515,13 +515,13 @@ MessageBoxIcon.Information);
                 {
                     switch (ComboBox3.Text)
                     {
-                        case "Двоичная система счисления":
+                        case "Binary number system":
                             TextBoxOutput.Text = Convert.ToString(Convert.ToInt32(TextBoxInput.Text), 2);
                             break;
-                        case "Восьмеричная система счисления":
+                        case "Octal number system":
                             TextBoxOutput.Text = Convert.ToString(Convert.ToInt32(TextBoxInput.Text), 8);
                             break;
-                        case "Шестнадцатеричная система счисления":
+                        case "Hexadecimal number system":
                             TextBoxOutput.Text = Convert.ToString(Convert.ToInt32(TextBoxInput.Text), 16);
                             break;
                     }
@@ -540,7 +540,7 @@ MessageBoxIcon.Information);
         {
             try
             {
-                if (TextBoxInput.Text != "") // Чтобы не вылезла ошибка, когда textBoxInput пуст
+                if (TextBoxInput.Text != "") // Чтобы не вылезла Error, когда textBoxInput пуст
                 {
                     ConvertTime z = new ConvertTime();
                     TextBoxOutput.Text = z.Convert(Convert.ToDouble(TextBoxInput.Text), ComboBox2.Text, ComboBox3.Text).ToString();
@@ -559,7 +559,7 @@ MessageBoxIcon.Information);
         {
             try
             {
-                if (TextBoxInput.Text != "") // Чтобы не вылезла ошибка, когда textBoxInput пуст
+                if (TextBoxInput.Text != "") // Чтобы не вылезла Error, когда textBoxInput пуст
                 {
                     ConvertInformation a = new ConvertInformation();
                     TextBoxOutput.Text = a.Convert(TextBoxInput.Text, ComboBox2.Text, ComboBox3.Text);

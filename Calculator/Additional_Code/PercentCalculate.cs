@@ -52,7 +52,7 @@
                     result = "100*" + number + "/" + percent;
                 }
             }
-            catch { return "Ошибка!"; }
+            catch { return "Error!"; }
 
             return result;
         }

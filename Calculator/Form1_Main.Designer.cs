@@ -488,7 +488,7 @@ namespace Calculator
             this.LabelDecision.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.LabelDecision.Location = new System.Drawing.Point(0, 26);
             this.LabelDecision.Name = "LabelDecision";
-            this.LabelDecision.Size = new System.Drawing.Size(80, 15);
+            this.LabelDecision.Size = new System.Drawing.Size(102, 20);
             this.LabelDecision.TabIndex = 1;
             this.LabelDecision.Text = "LabelDecision";
             this.LabelDecision.MouseHover += new System.EventHandler(this.LabelDecision_MouseHover);
@@ -498,9 +498,9 @@ namespace Calculator
             this.LabelNumber.AutoSize = true;
             this.LabelNumber.Dock = System.Windows.Forms.DockStyle.Right;
             this.LabelNumber.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.LabelNumber.Location = new System.Drawing.Point(126, 0);
+            this.LabelNumber.Location = new System.Drawing.Point(94, 0);
             this.LabelNumber.Name = "LabelNumber";
-            this.LabelNumber.Size = new System.Drawing.Size(112, 25);
+            this.LabelNumber.Size = new System.Drawing.Size(144, 32);
             this.LabelNumber.TabIndex = 0;
             this.LabelNumber.Text = "1234567890";
             this.LabelNumber.Click += new System.EventHandler(this.LabelNumber_Click);
@@ -509,6 +509,7 @@ namespace Calculator
             // MenuStrip
             // 
             this.MenuStrip.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolMenuView,
             this.ToolMenuEdit,
@@ -516,7 +517,7 @@ namespace Calculator
             this.ToolMenuHelp});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(876, 24);
+            this.MenuStrip.Size = new System.Drawing.Size(876, 28);
             this.MenuStrip.TabIndex = 25;
             // 
             // ToolMenuView
@@ -525,23 +526,23 @@ namespace Calculator
             this.ToolViewConverter,
             this.ToolViewHistory});
             this.ToolMenuView.Name = "ToolMenuView";
-            this.ToolMenuView.Size = new System.Drawing.Size(39, 20);
-            this.ToolMenuView.Text = "Вид";
+            this.ToolMenuView.Size = new System.Drawing.Size(54, 24);
+            this.ToolMenuView.Text = "Type";
             // 
             // ToolViewConverter
             // 
             this.ToolViewConverter.CheckOnClick = true;
             this.ToolViewConverter.Name = "ToolViewConverter";
-            this.ToolViewConverter.Size = new System.Drawing.Size(132, 22);
-            this.ToolViewConverter.Text = "Конвертер";
+            this.ToolViewConverter.Size = new System.Drawing.Size(156, 26);
+            this.ToolViewConverter.Text = "Converter";
             this.ToolViewConverter.Click += new System.EventHandler(this.ToolViewOpenItem_Click);
             // 
             // ToolViewHistory
             // 
             this.ToolViewHistory.CheckOnClick = true;
             this.ToolViewHistory.Name = "ToolViewHistory";
-            this.ToolViewHistory.Size = new System.Drawing.Size(132, 22);
-            this.ToolViewHistory.Text = "Журнал";
+            this.ToolViewHistory.Size = new System.Drawing.Size(156, 26);
+            this.ToolViewHistory.Text = "Log";
             this.ToolViewHistory.Click += new System.EventHandler(this.ToolViewOpenItem_Click);
             // 
             // ToolMenuEdit
@@ -551,28 +552,28 @@ namespace Calculator
             this.ToolEditPaste});
             this.ToolMenuEdit.Name = "ToolMenuEdit";
             this.ToolMenuEdit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.ToolMenuEdit.Size = new System.Drawing.Size(59, 20);
-            this.ToolMenuEdit.Text = "Правка";
+            this.ToolMenuEdit.Size = new System.Drawing.Size(49, 24);
+            this.ToolMenuEdit.Text = "Edit";
             // 
             // ToolEditCopy
             // 
             this.ToolEditCopy.Name = "ToolEditCopy";
-            this.ToolEditCopy.Size = new System.Drawing.Size(185, 22);
-            this.ToolEditCopy.Text = "Копировать (Ctrl+C)";
+            this.ToolEditCopy.Size = new System.Drawing.Size(182, 26);
+            this.ToolEditCopy.Text = "Edit (Ctrl+C)";
             this.ToolEditCopy.Click += new System.EventHandler(this.ToolEditCopy_Click);
             // 
             // ToolEditPaste
             // 
             this.ToolEditPaste.Name = "ToolEditPaste";
-            this.ToolEditPaste.Size = new System.Drawing.Size(185, 22);
-            this.ToolEditPaste.Text = "Вставить (Ctrl+V)";
+            this.ToolEditPaste.Size = new System.Drawing.Size(182, 26);
+            this.ToolEditPaste.Text = "Paste (Ctrl+V)";
             this.ToolEditPaste.Click += new System.EventHandler(this.ToolEditPaste_Click);
             // 
             // ToolMenuSettings
             // 
             this.ToolMenuSettings.Name = "ToolMenuSettings";
-            this.ToolMenuSettings.Size = new System.Drawing.Size(79, 20);
-            this.ToolMenuSettings.Text = "Настройки";
+            this.ToolMenuSettings.Size = new System.Drawing.Size(70, 24);
+            this.ToolMenuSettings.Text = "Setting";
             this.ToolMenuSettings.Click += new System.EventHandler(this.ToolMenuSettings_Click);
             // 
             // ToolMenuHelp
@@ -582,21 +583,21 @@ namespace Calculator
             this.ToolHelpHotKey,
             this.ToolHelpPercent});
             this.ToolMenuHelp.Name = "ToolMenuHelp";
-            this.ToolMenuHelp.Size = new System.Drawing.Size(65, 20);
-            this.ToolMenuHelp.Text = "Справка";
+            this.ToolMenuHelp.Size = new System.Drawing.Size(89, 24);
+            this.ToolMenuHelp.Text = "Reference";
             // 
             // ToolHelpHotKey
             // 
             this.ToolHelpHotKey.Name = "ToolHelpHotKey";
-            this.ToolHelpHotKey.Size = new System.Drawing.Size(205, 22);
-            this.ToolHelpHotKey.Text = "Горячие клавиши";
+            this.ToolHelpHotKey.Size = new System.Drawing.Size(218, 26);
+            this.ToolHelpHotKey.Text = "Hotkeys";
             this.ToolHelpHotKey.Click += new System.EventHandler(this.ToolHelpHotKey_Click);
             // 
             // ToolHelpPercent
             // 
             this.ToolHelpPercent.Name = "ToolHelpPercent";
-            this.ToolHelpPercent.Size = new System.Drawing.Size(205, 22);
-            this.ToolHelpPercent.Text = "Вычисление процентов";
+            this.ToolHelpPercent.Size = new System.Drawing.Size(218, 26);
+            this.ToolHelpPercent.Text = "Percent Calculation";
             this.ToolHelpPercent.Click += new System.EventHandler(this.ToolHelpPercent_Click);
             // 
             // ButtonUnFocus
@@ -622,7 +623,7 @@ namespace Calculator
             this.BoxConverter.Size = new System.Drawing.Size(347, 218);
             this.BoxConverter.TabIndex = 81;
             this.BoxConverter.TabStop = false;
-            this.BoxConverter.Text = "Конвертер";
+            this.BoxConverter.Text = "Converter";
             this.BoxConverter.Visible = false;
             // 
             // TextBoxInput
@@ -648,9 +649,9 @@ namespace Calculator
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 13);
+            this.label1.Size = new System.Drawing.Size(208, 15);
             this.label1.TabIndex = 72;
-            this.label1.Text = "Выберите тип преобразуемой единицы";
+            this.label1.Text = "Select the type of unit to be converted";
             // 
             // ComboBox3
             // 
@@ -667,18 +668,18 @@ namespace Calculator
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.Size = new System.Drawing.Size(36, 15);
             this.label2.TabIndex = 73;
-            this.label2.Text = "Из";
+            this.label2.Text = "From";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.Size = new System.Drawing.Size(19, 15);
             this.label3.TabIndex = 74;
-            this.label3.Text = "В";
+            this.label3.Text = "IN";
             // 
             // ComboBox1
             // 
@@ -686,9 +687,9 @@ namespace Calculator
             this.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox1.FormattingEnabled = true;
             this.ComboBox1.Items.AddRange(new object[] {
-            "Информация",
-            "Время",
-            "Системы счисления"});
+            "Information",
+            "Time",
+            "Number Base"});
             this.ComboBox1.Location = new System.Drawing.Point(6, 32);
             this.ComboBox1.Name = "ComboBox1";
             this.ComboBox1.Size = new System.Drawing.Size(335, 21);
@@ -814,7 +815,7 @@ namespace Calculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(876, 240);
+            this.ClientSize = new System.Drawing.Size(876, 428);
             this.Controls.Add(this.BoxConverter);
             this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.PanelHistory);
@@ -827,7 +828,7 @@ namespace Calculator
             this.MaximizeBox = false;
             this.Name = "Form1_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Калькулятор";
+            this.Text = "Calculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Main_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.Form1_Main_PreviewKeyDown);

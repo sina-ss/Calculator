@@ -6,26 +6,26 @@ namespace Calculator.Additional_Code
     {
         public string Convert(string input, string CB2, string CB3)
         {
-            bool TB2 = CB2 == "Терабайт";
-            bool TB3 = CB3 == "Терабайт";
-            bool GB2 = CB2 == "Гигабайт";
-            bool GB3 = CB3 == "Гигабайт";
-            bool MB2 = CB2 == "Мегабайт";
-            bool MB3 = CB3 == "Мегабайт";
-            bool KB2 = CB2 == "Килобайт";
-            bool KB3 = CB3 == "Килобайт";
-            bool B2 = CB2 == "Байт";
-            bool B3 = CB3 == "Байт";
-            bool Bi2 = CB2 == "Бит";
-            bool Bi3 = CB3 == "Бит";
-            bool KBi2 = CB2 == "Килобит";
-            bool KBi3 = CB3 == "Килобит";
-            bool MBi2 = CB2 == "Мегабит";
-            bool MBi3 = CB3 == "Мегабит";
-            bool GBi2 = CB2 == "Гигабит";
-            bool GBi3 = CB3 == "Гигабит";
-            bool TBi2 = CB2 == "Терабит";
-            bool TBi3 = CB3 == "Терабит";
+            bool TB2 = CB2 == "Terabyte";
+            bool TB3 = CB3 == "Terabyte";
+            bool GB2 = CB2 == "Gigabyte";
+            bool GB3 = CB3 == "Gigabyte";
+            bool MB2 = CB2 == "Megabyte";
+            bool MB3 = CB3 == "Megabyte";
+            bool KB2 = CB2 == "Kilobyte";
+            bool KB3 = CB3 == "Kilobyte";
+            bool B2 = CB2 == "Byte";
+            bool B3 = CB3 == "Byte";
+            bool Bi2 = CB2 == "bit";
+            bool Bi3 = CB3 == "bit";
+            bool KBi2 = CB2 == "Kilobit";
+            bool KBi3 = CB3 == "Kilobit";
+            bool MBi2 = CB2 == "Megabit";
+            bool MBi3 = CB3 == "Megabit";
+            bool GBi2 = CB2 == "Gigabit";
+            bool GBi3 = CB3 == "Gigabit";
+            bool TBi2 = CB2 == "Terabit";
+            bool TBi3 = CB3 == "Terabit";
 
             double ConvertInfoDU = double.Parse(input);
             decimal ConvertInfoDC = decimal.Parse(input);

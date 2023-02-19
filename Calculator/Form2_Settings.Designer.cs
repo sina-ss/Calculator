@@ -55,7 +55,7 @@
             this.BoxCopy.Size = new System.Drawing.Size(249, 72);
             this.BoxCopy.TabIndex = 0;
             this.BoxCopy.TabStop = false;
-            this.BoxCopy.Text = "Копирование";
+            this.BoxCopy.Text = "Copying"; //Копирование ???
             // 
             // radioButton3
             // 
@@ -64,7 +64,7 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(106, 17);
             this.radioButton3.TabIndex = 2;
-            this.radioButton3.Text = "Копировать всё";
+            this.radioButton3.Text = "Copy All";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -74,7 +74,7 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(146, 17);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Копировать выражение";
+            this.radioButton2.Text = "Copy Expression";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -84,7 +84,7 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(132, 17);
             this.radioButton1.TabIndex = 0;
-            this.radioButton1.Text = "Копировать решение";
+            this.radioButton1.Text = "Copy Solution";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // CheckBox1
@@ -94,7 +94,7 @@
             this.CheckBox1.Name = "CheckBox1";
             this.CheckBox1.Size = new System.Drawing.Size(241, 17);
             this.CheckBox1.TabIndex = 1;
-            this.CheckBox1.Text = "Группировка цифр по разрядам (решения)";
+            this.CheckBox1.Text = "Grouping numbers by digits (solutions)";
             this.CheckBox1.UseVisualStyleBackColor = true;
             // 
             // CheckBox2
@@ -104,7 +104,7 @@
             this.CheckBox2.Name = "CheckBox2";
             this.CheckBox2.Size = new System.Drawing.Size(243, 17);
             this.CheckBox2.TabIndex = 2;
-            this.CheckBox2.Text = "Чистить журнал при закрытии программы";
+            this.CheckBox2.Text = "Clear the log when the program closes";
             this.CheckBox2.UseVisualStyleBackColor = true;
             // 
             // BoxAccuracyCalc
@@ -116,7 +116,7 @@
             this.BoxAccuracyCalc.Size = new System.Drawing.Size(249, 54);
             this.BoxAccuracyCalc.TabIndex = 3;
             this.BoxAccuracyCalc.TabStop = false;
-            this.BoxAccuracyCalc.Text = "Точность вычислений (Конвертер(Информ..))";
+            this.BoxAccuracyCalc.Text = "Calculation accuracy (Converter(Inform..))";
             // 
             // radioButton5
             // 
@@ -126,7 +126,7 @@
             this.radioButton5.Size = new System.Drawing.Size(130, 17);
             this.radioButton5.TabIndex = 1;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Повышаная (decimal)";
+            this.radioButton5.Text = "Increase (decimal)";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -137,7 +137,7 @@
             this.radioButton4.Size = new System.Drawing.Size(111, 17);
             this.radioButton4.TabIndex = 0;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Обычная (double)";
+            this.radioButton4.Text = "Regular (double)";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // CheckBox3
@@ -147,7 +147,7 @@
             this.CheckBox3.Name = "CheckBox3";
             this.CheckBox3.Size = new System.Drawing.Size(181, 17);
             this.CheckBox3.TabIndex = 4;
-            this.CheckBox3.Text = "Защита от случайных нажатий";
+            this.CheckBox3.Text = "Protection against accidental clicks";
             this.CheckBox3.UseVisualStyleBackColor = true;
             // 
             // CheckBox5
@@ -157,7 +157,7 @@
             this.CheckBox5.Name = "CheckBox5";
             this.CheckBox5.Size = new System.Drawing.Size(137, 17);
             this.CheckBox5.TabIndex = 5;
-            this.CheckBox5.Text = "Расширенный журнал";
+            this.CheckBox5.Text = "Extend Log History";
             this.CheckBox5.UseVisualStyleBackColor = true;
             // 
             // CheckBox4
@@ -167,7 +167,7 @@
             this.CheckBox4.Name = "CheckBox4";
             this.CheckBox4.Size = new System.Drawing.Size(171, 17);
             this.CheckBox4.TabIndex = 6;
-            this.CheckBox4.Text = "Округление ответа до сотых";
+            this.CheckBox4.Text = "Rounding answer to hundredths";
             this.CheckBox4.UseVisualStyleBackColor = true;
             // 
             // Form2_Settings
@@ -189,7 +189,7 @@
             this.MinimizeBox = false;
             this.Name = "Form2_Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Настройки";
+            this.Text = "Setting";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_Settings_FormClosing);
             this.BoxCopy.ResumeLayout(false);
             this.BoxCopy.PerformLayout();
